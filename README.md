@@ -7,7 +7,7 @@
 若在 Commit 前發生例外，交易將會被 roll back
 
 ```
-public void toTest()
+public void toTest1()
         {
             using (var tran = dbCtx.Database.BeginTransaction())
             { 
@@ -27,7 +27,7 @@ public void toTest()
 若在 complete 前發生例外，包含在 scope 內的交易將會被 roll back
 
 ```
-public void toTest()
+public void toTest2()
         {
             using (var scope = new System.Transactions.TransactionScope())
             { 
